@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { cartActions } from '../store/cart';
 
+// 장바구니 물품 있을 때
 function CartItems(props: any) {
   const dispatch = useDispatch();
   const cartItemCount = useSelector(

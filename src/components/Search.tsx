@@ -15,6 +15,7 @@ interface ProductData {
   };
 }
 
+// 검색영역
 function Search() {
   const [searchArray, setSearchArray] = useState<ProductData[]>([]);
   const [isSearch, setIsSearch] = useState(false);

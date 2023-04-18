@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../store/cart';
 import CartItems from './CartItems';
 
+// 장바구니 물품 리스트
 function CartList() {
   const products = useSelector((state: any) => state.productStore.all);
   const cartItems = useSelector((state: any) => state.cartStore.items);

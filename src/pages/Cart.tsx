@@ -4,6 +4,7 @@ import CartEmpty from '../components/CartEmpty';
 import CartList from '../components/CartList';
 import cart, { cartActions } from '../store/cart';
 
+// 장바구니 리스트
 function Cart() {
   const cartItemsCount = useSelector(
     (state: any) => state.cartStore.totalCount,

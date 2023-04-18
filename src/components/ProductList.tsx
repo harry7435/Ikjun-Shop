@@ -31,8 +31,7 @@ function SkeletonProduct() {
   );
 }
 
-// 하나의 아이템을 나타내는 컴포넌트입니다.
-// 아래의 ProductList의 자식 컴포넌트입니다.
+// 낱개 물품
 function Product({ data }: { data: ProductData }) {
   return (
     <Link to={`/product/${data.id}`}>
@@ -53,7 +52,7 @@ function Product({ data }: { data: ProductData }) {
   );
 }
 
-// product list 컴포넌트, export가 되는 컴포넌트입니다.
+// 물품 리스트
 function ProductList({ page, category }: { page: string; category: Category }) {
   const productListComp = useRef<HTMLDivElement>(null);
   const productContainer = useRef<HTMLDivElement>(null);
@@ -75,8 +74,7 @@ function ProductList({ page, category }: { page: string; category: Category }) {
     (state: State) => state.productStore[category],
   );
 
-  // 홈페이지와 카테고리 페이지의 css 구분하기
-  // 오류가 날 경우 스타일 변경하기
+  // home과 category 페이지의 css 구분
   useEffect(() => {
     if (page === 'home') {
       productListComp.current?.classList.add('overflow-x-scroll');

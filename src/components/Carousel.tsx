@@ -30,7 +30,7 @@ function Slide({ image, title, content, path }: SlideData) {
   );
 }
 
-// component이름을 Comp로 한 이유는 위의 Carousel과 겹치기 때문입니다.
+// component
 function Comp() {
   return (
     <Carousel

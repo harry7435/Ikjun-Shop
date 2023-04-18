@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Search from './Search';
 import { themeContext } from '../App';
 
+// 헤더, 네비
 function Header() {
   const { theme, setTheme } = useContext(themeContext);
   const dispatch = useDispatch();
@@ -23,16 +24,14 @@ function Header() {
     }
   }
 
-  /**
-   * Cart Store
-   */
+  // 장바구니 물품 갯수 체크
   const cartItemsCount = useSelector(
     (state: any) => state.cartStore.totalCount,
   );
 
   return (
     <nav className="navbar sticky top-0 z-10" data-theme={theme}>
-      {/* 축소 시 생기는 버튼, 드랍다운으로 카테고리를 선택할 수 있습니다. */}
+      {/* 왼쪽 상단 네비바 */}
       <div className="dropdown md:hidden" id="category_drop-down">
         <label tabIndex={0} className="btn btn-ghost btn-circle">
           <svg
@@ -71,7 +70,7 @@ function Header() {
           React Shop
         </Link>
       </div>
-      {/* 카테고리 */}
+      {/* 카테고리 메뉴 */}
       <div className="flex-none hidden md:block" id="category">
         <ul className="menu menu-horizontal p-0">
           <li>

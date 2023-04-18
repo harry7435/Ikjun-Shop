@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+// 장바구니가 비었을 때
 function CartEmpty() {
   return (
     <>
