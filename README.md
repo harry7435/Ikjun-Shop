@@ -1,5 +1,6 @@
 # Ikjun-Shop
-https://ikjun-shop-git-main-harry7435.vercel.app/
+
+https://ikjun-shop.vercel.app/
 
 ## FrameWork
 
