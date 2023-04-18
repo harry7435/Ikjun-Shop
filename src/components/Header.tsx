@@ -75,13 +75,19 @@ function Header() {
       <div className="flex-none hidden md:block" id="category">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <Link to="/fashion">패션</Link>
+            <Link to="/fashion" className="btn btn-ghost rounded-md">
+              패션
+            </Link>
           </li>
           <li>
-            <Link to="/accessory">액세서리</Link>
+            <Link to="/accessory" className="btn btn-ghost rounded-md">
+              액세서리
+            </Link>
           </li>
           <li>
-            <Link to="/digital">디지털</Link>
+            <Link to="/digital" className="btn btn-ghost rounded-md">
+              디지털
+            </Link>
           </li>
         </ul>
       </div>
