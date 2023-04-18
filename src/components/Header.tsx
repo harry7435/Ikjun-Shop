@@ -92,14 +92,14 @@ function Header() {
         {theme === 'light' ? (
           <img
             src={darkThemeButton}
-            className="w-5 h-5"
+            className="swap-off w-5 h-5"
             alt="다크모드"
             onClick={changeTheme}
           />
         ) : (
           <img
             src={lightThemeButton}
-            className="w-5 h-5"
+            className="swap-on w-5 h-5"
             alt="라이트모드"
             onClick={changeTheme}
           />
