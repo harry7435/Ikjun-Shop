@@ -37,7 +37,7 @@ function Header() {
         <label tabIndex={0} className="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -112,7 +112,7 @@ function Header() {
         <Link to="/cart" className="indicator">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -121,10 +121,10 @@ function Header() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
             />
           </svg>
-          <span className="badge badge-sm indicator-item">
+          <span className="inline-flex items-center justify-center absolute top-0 right-0 px-2 py-1 rounded-full bg-red-500 text-xs font-bold leading-none text-gray-200 transform translate-x-1/2 -translate-y-1/2">
             {cartItemsCount}
           </span>
         </Link>
