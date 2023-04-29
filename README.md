@@ -1,5 +1,8 @@
 # Ikjun-Shop
 
+Vite를 활용한 쇼핑몰 미니 프로젝트 실습입니다.
+
+## 배포 링크
 https://ikjun-shop.vercel.app/
 
 ## FrameWork
